@@ -1,0 +1,33 @@
+package ki303.Smoliak.Lab2;
+
+import java.io.IOException;
+
+public class PrinterDriver {
+    
+    public static void main(String[] args) {
+        try {
+            Printer printer = new Printer(
+                    new CartridgeSystem(80),
+                    new PaperTray(90),
+                    new PrintingMechanism()
+            );
+            printer.addPaper(10);
+            printer.print("Документ 1");
+            printer.print("Документ 2");
+            printer.replaceCartridge();
+            printer.checkStatus();
+            printer.cleanPrintHead();
+            printer.calibrate();
+            printer.enableEcoMode();
+            printer.disableEcoMode();
+            printer.needsCartridgeReplacement();
+            printer.viewPrintHistory();
+            printer.clearPaperTray();
+
+            printer.closeLogger();
+        } catch (IOException e) {
+            // Обробка помилок, що виникають під час запису в файл
+            throw new RuntimeException("Сталася помилка при записі в файл: " + e.getMessage());
+        }
+    }
+}

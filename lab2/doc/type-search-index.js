@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"ki303.Smoliak.Lab2","l":"CartridgeSystem"},{"p":"ki303.Smoliak.Lab2","l":"Logger"},{"p":"ki303.Smoliak.Lab2","l":"PaperTray"},{"p":"ki303.Smoliak.Lab2","l":"Printer"},{"p":"ki303.Smoliak.Lab2","l":"PrinterDriver"},{"p":"ki303.Smoliak.Lab2","l":"PrintingMechanism"}];updateSearchResults();
